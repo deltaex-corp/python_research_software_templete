@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "nbsphinx>=0.9.4",
     "pandoc>=2.3",
+    "jupyter>=1.0.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.12"
