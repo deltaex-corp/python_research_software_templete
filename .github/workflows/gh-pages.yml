@@ -25,6 +25,9 @@ jobs:
         run: |
           source "$HOME/.rye/env"
           rye sync
+      - name: Move Documentation to Publish Directory
+        run: |
+          cp ./README.md ./docs/source
       - name: Build Docs
         run: |
           source "$HOME/.rye/env"
