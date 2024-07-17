@@ -24,6 +24,7 @@ dev-dependencies = [
     "nbsphinx>=0.9.4",
     "pandoc>=2.3",
     "jupyter>=1.0.0",
+    "sphinx-rtd-theme>=2.0.0",
 ]
 
 [tool.hatch.metadata]
