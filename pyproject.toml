@@ -5,7 +5,10 @@ description = "Add your description here"
 authors = [
     { name = "wakabame", email = "wakabame89@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "nbsphinx>=0.9.4",
+    "pandoc>=2.3",
+]
 readme = "README.md"
 requires-python = ">= 3.12"
 
