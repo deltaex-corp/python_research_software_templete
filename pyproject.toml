@@ -6,9 +6,6 @@ authors = [
     { name = "wakabame", email = "wakabame89@gmail.com" }
 ]
 dependencies = [
-    "nbsphinx>=0.9.4",
-    "pandoc>=2.3",
-    "jupyter>=1.0.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.12"
@@ -24,6 +21,9 @@ dev-dependencies = [
     "pre-commit>=3.7.1",
     "pytest>=8.2.1",
     "mypy>=1.10.0",
+    "nbsphinx>=0.9.4",
+    "pandoc>=2.3",
+    "jupyter>=1.0.0",
 ]
 
 [tool.hatch.metadata]
