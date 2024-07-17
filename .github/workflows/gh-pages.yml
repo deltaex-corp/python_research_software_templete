@@ -27,6 +27,7 @@ jobs:
           rye sync
       - name: Build Docs
         run: |
+          source "$HOME/.rye/env"
           cd docs
           make html
       - name: Deploy
