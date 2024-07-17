@@ -1,4 +1,4 @@
-from python_project_templete.sample import sample_add_int
+from python_research_software_templete.sample import sample_add_int
 
 
 def test_sample_add_int() -> None:

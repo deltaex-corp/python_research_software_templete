@@ -1,4 +1,4 @@
-# python_project_templete
+# python_research_software_templete
 
 Rye + uv でのプロジェクト管理
 GitHub Actions でのCI
