@@ -11,3 +11,6 @@ wheels/
 .venv
 
 /.quarto/
+/_site/
+/api/
+objects.json
