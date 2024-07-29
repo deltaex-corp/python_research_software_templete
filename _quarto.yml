@@ -9,3 +9,9 @@ quartodoc:
   package: python_research_software_templete
   sidebar: _sidebar.yml
   out_index: index.qmd
+
+  sections:
+    - title: sample
+      desc: ""
+      contents:
+        - sample.sample_add_int
