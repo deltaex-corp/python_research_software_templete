@@ -31,10 +31,10 @@ website:
             - python_research_software_templete.qmd
         - section: "API reference"
           contents:
-            - api/index.qmd
+            - api/*
         - section: "Notebooks"
           contents:
-            - notebook/your_notebook.qmd
+            - notebook/*
 
 format:
   html:
