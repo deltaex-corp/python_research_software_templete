@@ -35,11 +35,9 @@ website:
           contents:
             - python_research_software_templete.qmd
         - section: "API reference"
-          contents:
-            - auto: "api/*""
+          contents: "api/*"
         - section: "Notebooks"
-          contents:
-            - auto: "notebook/*""
+          contents: "notebook/*"
 
 format:
   html:
