@@ -6,12 +6,12 @@ publish:
   provider: gh-pages
 
 website:
-  title: "quartodoc"
+  title: "python_research_software_templete"
   page-navigation: true
   navbar:
     left:
-      - file: tutorials/
-        text: Tutorials
+      - file: notebook/your_notebook.html
+        text: Notebooks
       - href: api/
         text: Reference
   sidebar:
@@ -20,19 +20,23 @@ website:
       style: floating
       align: left
       contents:
-        - get-started/overview.qmd
+        - sample_page.qmd
         - section: "Docs"
           contents:
             - python_research_software_templete.qmd
-        - section: "Tutorials"
+            - sample_page.qmd
+        - section: "API reference"
           contents:
-            - notebook/your_notebook.ipynb
+            - api
+        - section: "Notebooks"
+          contents:
+            - notebook/your_notebook.html
 
 quartodoc:
   style: pkgdown
   package: python_research_software_templete
   dir: api
-  sidebar: api/_sidebar.yml
+  sidebar: "api/_sidebar.yml"
   out_index: index.qmd
 
   sections:
