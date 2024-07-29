@@ -26,13 +26,13 @@ website:
         - overview_page.qmd
         - section: "Docs"
           contents:
-            - python_research_softwar
+            - python_research_software
         - section: "API reference"
           contents:
-            - api
+            - api/index.html
         - section: "Notebooks"
           contents:
-            - notebook/your_notebook.qmd
+            - notebook/your_notebook.html
 
 format:
   html:
