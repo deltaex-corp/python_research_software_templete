@@ -196,6 +196,8 @@ notebook==7.2.1
 notebook-shim==0.2.4
     # via jupyterlab
     # via notebook
+numpy==2.0.1
+    # via python-research-software-templete
 overrides==7.7.0
     # via jupyter-server
 packaging==24.0
