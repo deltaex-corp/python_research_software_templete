@@ -1,6 +1,8 @@
 project:
   title: "python_research_software_templete"
   type: website
+  render:
+    - "*.qmd"
 
 metadata-files:
   - api/_sidebar.yml
@@ -32,7 +34,7 @@ website:
             - api/index.qmd
         - section: "Notebooks"
           contents:
-            - notebook/your_notebook.html
+            - notebook/your_notebook.qmd
 
 format:
   html:
@@ -45,7 +47,6 @@ quartodoc:
   package: python_research_software_templete
   dir: api
   sidebar: "api/_sidebar.yml"
-  out_index: index.qmd
 
   sections:
     - title: sample
