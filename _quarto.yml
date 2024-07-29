@@ -26,10 +26,10 @@ website:
         - overview_page.qmd
         - section: "Docs"
           contents:
-            - python_research_software
+            - python_research_software_templete.qmd
         - section: "API reference"
           contents:
-            - api/index.html
+            - api/index.qmd
         - section: "Notebooks"
           contents:
             - notebook/your_notebook.html
