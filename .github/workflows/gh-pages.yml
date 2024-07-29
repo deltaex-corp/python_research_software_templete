@@ -33,6 +33,7 @@ jobs:
         run: |
           source "$HOME/.rye/env"
           rye run quartodoc build
+          find notebook/ -name "*.ipynb" | xargs -I {} quarto convert "{}"
           quarto render
       - uses: actions/upload-pages-artifact@v3
         with:

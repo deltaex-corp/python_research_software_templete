@@ -3,7 +3,6 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "*.ipynb"
 
 metadata-files:
   - api/_sidebar.yml
