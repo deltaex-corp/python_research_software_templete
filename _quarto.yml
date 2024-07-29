@@ -5,9 +5,34 @@ project:
 publish:
   provider: gh-pages
 
+website:
+  title: "quartodoc"
+  page-navigation: true
+  navbar:
+    left:
+      - file: tutorials/
+        text: Tutorials
+      - href: api/
+        text: Reference
+  sidebar:
+    - id: get-started
+      title: Get Started
+      style: floating
+      align: left
+      contents:
+        - get-started/overview.qmd
+        - section: "Docs"
+          contents:
+            - python_research_software_templete.qmd
+        - section: "Tutorials"
+          contents:
+            - notebook/your_notebook.ipynb
+
 quartodoc:
+  style: pkgdown
   package: python_research_software_templete
-  sidebar: _sidebar.yml
+  dir: api
+  sidebar: api/_sidebar.yml
   out_index: index.qmd
 
   sections:
