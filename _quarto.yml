@@ -1,0 +1,10 @@
+project:
+  title: "python_research_software_templete"
+  type: website
+
+publish:
+  provider: gh-pages
+
+quartodoc:
+  package: python_research_software_templete
+  sidebar: _sidebar.yml
