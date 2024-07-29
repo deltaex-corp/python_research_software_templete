@@ -15,7 +15,7 @@ website:
   page-navigation: true
   navbar:
     left:
-      - file: overview_page.qmd
+      - file: index.qmd
         text: Overview
       - href: api/
         text: Reference
@@ -25,7 +25,7 @@ website:
       style: floating
       align: left
       contents:
-        - overview_page.qmd
+        - index.qmd
         - section: "Docs"
           contents:
             - python_research_software_templete.qmd
