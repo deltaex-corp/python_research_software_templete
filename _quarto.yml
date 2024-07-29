@@ -19,6 +19,11 @@ website:
         text: Overview
       - href: api/
         text: Reference
+    tools:
+    - icon: github
+      menu:
+        - text: Source Code
+          href: https://github.com/wakabame/python_research_software_templete
   sidebar:
     - id: get-started
       title: Get Started
@@ -35,11 +40,6 @@ website:
         - section: "Notebooks"
           contents:
             - notebook/*
-      tools:
-        - icon: github
-          menu:
-            - text: Source Code
-              href: https://github.com/wakabame/python_research_software_templete
 
 format:
   html:
