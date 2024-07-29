@@ -15,8 +15,6 @@ website:
     left:
       - file: overview_page.qmd
         text: Overview
-      - file: notebook/your_notebook.html
-        text: Notebooks
       - href: api/
         text: Reference
   sidebar:
@@ -34,7 +32,7 @@ website:
             - api
         - section: "Notebooks"
           contents:
-            - notebook/your_notebook.html
+            - notebook/your_notebook.qmd
 
 format:
   html:
