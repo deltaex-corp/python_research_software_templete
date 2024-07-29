@@ -2,6 +2,9 @@ project:
   title: "python_research_software_templete"
   type: website
 
+metadata-files:
+  - api/_sidebar.yml
+
 publish:
   provider: gh-pages
 
@@ -10,6 +13,8 @@ website:
   page-navigation: true
   navbar:
     left:
+      - file: overview_page.qmd
+        text: Overview
       - file: notebook/your_notebook.html
         text: Notebooks
       - href: api/
@@ -20,17 +25,22 @@ website:
       style: floating
       align: left
       contents:
-        - sample_page.qmd
+        - overview_page.qmd
         - section: "Docs"
           contents:
-            - python_research_software_templete.qmd
-            - sample_page.qmd
+            - python_research_softwar
         - section: "API reference"
           contents:
             - api
         - section: "Notebooks"
           contents:
             - notebook/your_notebook.html
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
 
 quartodoc:
   style: pkgdown
