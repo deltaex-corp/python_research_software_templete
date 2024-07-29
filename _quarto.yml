@@ -47,6 +47,7 @@ format:
 
 quartodoc:
   style: pkgdown
+  parser: numpy
   package: python_research_software_templete
   dir: api
   sidebar: "api/_sidebar.yml"
