@@ -27,6 +27,7 @@ dev-dependencies = [
     "sphinx-rtd-theme>=2.0.0",
     "sphinx-markdown-builder>=0.6.6",
     "myst-parser>=3.0.1",
+    "quartodoc>=0.7.5",
 ]
 
 [tool.hatch.metadata]
