@@ -11,7 +11,7 @@ wheels/
 .venv
 
 /.quarto/
-/_site/
-/api/
-objects.json
-/notebook/*.qmd
+/docs/_site/
+/docs/api/
+/docs/objects.json
+/docs/notebook/*.qmd
