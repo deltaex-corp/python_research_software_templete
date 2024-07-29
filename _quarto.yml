@@ -36,10 +36,10 @@ website:
             - python_research_software_templete.qmd
         - section: "API reference"
           contents:
-            - api/*
+            - auto: "api/*""
         - section: "Notebooks"
           contents:
-            - notebook/*
+            - auto: "notebook/*""
 
 format:
   html:
