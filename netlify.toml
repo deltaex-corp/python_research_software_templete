@@ -1,0 +1,7 @@
+[build]
+publish = "_site"
+command = """
+  curl -o quarto.deb -L https://quarto.org/download/latest/quarto-linux-amd64.deb &&
+  sudo dpkg -i quarto.deb &&
+  quarto publish
+"""
