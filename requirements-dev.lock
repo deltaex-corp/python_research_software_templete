@@ -35,6 +35,8 @@ beartype==0.18.5
     # via plum-dispatch
 beautifulsoup4==4.12.3
     # via nbconvert
+black==24.10.0
+    # via quartodoc
 bleach==6.1.0
     # via nbconvert
 certifi==2024.7.4
@@ -49,6 +51,7 @@ cfgv==3.4.0
 charset-normalizer==3.3.2
     # via requests
 click==8.1.7
+    # via black
     # via quartodoc
 colorama==0.4.6
     # via griffe
@@ -102,7 +105,6 @@ ipykernel==6.29.5
     # via jupyter
     # via jupyter-console
     # via jupyterlab
-    # via qtconsole
 ipython==8.26.0
     # via ipykernel
     # via ipywidgets
@@ -129,13 +131,12 @@ jsonschema==4.23.0
     # via sphobjinv
 jsonschema-specifications==2023.12.1
     # via jsonschema
-jupyter==1.0.0
+jupyter==1.1.1
 jupyter-client==8.6.2
     # via ipykernel
     # via jupyter-console
     # via jupyter-server
     # via nbclient
-    # via qtconsole
 jupyter-console==6.6.3
     # via jupyter
 jupyter-core==5.7.2
@@ -147,7 +148,6 @@ jupyter-core==5.7.2
     # via nbclient
     # via nbconvert
     # via nbformat
-    # via qtconsole
 jupyter-events==0.10.0
     # via jupyter-server
 jupyter-lsp==2.2.5
@@ -161,6 +161,7 @@ jupyter-server==2.14.2
 jupyter-server-terminals==0.5.3
     # via jupyter-server
 jupyterlab==4.2.3
+    # via jupyter
     # via notebook
 jupyterlab-pygments==0.3.0
     # via nbconvert
@@ -185,8 +186,9 @@ mdurl==0.1.2
     # via markdown-it-py
 mistune==3.0.2
     # via nbconvert
-mypy==1.10.0
+mypy==1.13.0
 mypy-extensions==1.0.0
+    # via black
     # via mypy
 nbclient==0.10.0
     # via nbconvert
@@ -213,6 +215,7 @@ numpy==2.0.1
 overrides==7.7.0
     # via jupyter-server
 packaging==24.0
+    # via black
     # via ipykernel
     # via jupyter-server
     # via jupyterlab
@@ -220,24 +223,25 @@ packaging==24.0
     # via matplotlib
     # via nbconvert
     # via pytest
-    # via qtconsole
-    # via qtpy
 pandocfilters==1.5.1
     # via nbconvert
 parso==0.8.4
     # via jedi
+pathspec==0.12.1
+    # via black
 pexpect==4.9.0
     # via ipython
 pillow==10.4.0
     # via matplotlib
 platformdirs==4.2.2
+    # via black
     # via jupyter-core
     # via virtualenv
 pluggy==1.5.0
     # via pytest
 plum-dispatch==2.5.2
     # via quartodoc
-pre-commit==3.7.1
+pre-commit==4.0.1
 prometheus-client==0.20.0
     # via jupyter-server
 prompt-toolkit==3.0.47
@@ -260,11 +264,10 @@ pygments==2.18.0
     # via ipython
     # via jupyter-console
     # via nbconvert
-    # via qtconsole
     # via rich
 pyparsing==3.1.2
     # via matplotlib
-pytest==8.2.1
+pytest==8.3.3
 python-dateutil==2.9.0.post0
     # via arrow
     # via jupyter-client
@@ -280,12 +283,7 @@ pyzmq==26.0.3
     # via jupyter-client
     # via jupyter-console
     # via jupyter-server
-    # via qtconsole
-qtconsole==5.5.2
-    # via jupyter
-qtpy==2.4.1
-    # via qtconsole
-quartodoc==0.7.5
+quartodoc==0.8.1
 referencing==0.35.1
     # via jsonschema
     # via jsonschema-specifications
@@ -304,7 +302,7 @@ rich==13.7.1
 rpds-py==0.19.0
     # via jsonschema
     # via referencing
-ruff==0.4.7
+ruff==0.7.1
 send2trash==1.8.3
     # via jupyter-server
 setuptools==70.3.0
@@ -352,7 +350,6 @@ traitlets==5.14.3
     # via nbclient
     # via nbconvert
     # via nbformat
-    # via qtconsole
 types-python-dateutil==2.9.0.20240316
     # via arrow
 typing-extensions==4.12.1
