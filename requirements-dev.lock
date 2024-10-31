@@ -177,7 +177,7 @@ markdown-it-py==3.0.0
 markupsafe==2.1.5
     # via jinja2
     # via nbconvert
-matplotlib==3.9.1
+matplotlib==3.9.2
     # via python-research-software-templete
 matplotlib-inline==0.1.7
     # via ipykernel
@@ -208,7 +208,7 @@ notebook==7.2.1
 notebook-shim==0.2.4
     # via jupyterlab
     # via notebook
-numpy==2.0.1
+numpy==2.1.2
     # via contourpy
     # via matplotlib
     # via python-research-software-templete
