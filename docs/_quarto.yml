@@ -33,7 +33,7 @@ website:
         - index.qmd
         - section: "Docs"
           contents:
-            - python_research_software_templete.qmd
+            - index.qmd
         - section: "API reference"
           contents: "api/*"
         - section: "Notebooks"
