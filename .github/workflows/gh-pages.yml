@@ -17,7 +17,7 @@ jobs:
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          version: 1.4.549
+          version: 1.4.515
       - name: Load cached venv
         id: cache_dependency_python
         uses: actions/cache@v4
