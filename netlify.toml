@@ -5,8 +5,9 @@ command = """
   chmod +x ./setup-rye.sh && ./setup-rye.sh
 
   # 2. Quarto をインストール
-  curl -o quarto.deb -L https://quarto.org/download/latest/quarto-linux-amd64.deb &&
-  dpkg -i quarto.deb
+  curl -Lo quarto.tar.gz https://quarto.org/download/latest/quarto-linux-amd64.tar.gz
+  tar -xzf quarto.tar.gz
+  export PATH=$PATH:$PWD/quarto/bin  # ダウンロードしたバイナリをパスに追加
 
   # 3. 必要な Python モジュールをインストール
   source "$HOME/.rye/env"
