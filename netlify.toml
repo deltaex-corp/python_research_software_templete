@@ -1,8 +1,8 @@
 [build]
 publish = "docs/_site"
 command = """
-  # 1. Rye をインストール
-  chmod +x ./setup-rye.sh && ./setup-rye.sh
+  # 1. uv をインストール
+  chmod +x ./setup-uv.sh && ./setup-uv.sh
 
   # 2. Quarto をインストール
   curl -Lo quarto.tar.gz https://quarto.org/download/latest/quarto-linux-amd64.tar.gz
@@ -11,11 +11,11 @@ command = """
   export PATH=$PATH:$PWD/quarto/bin  # ダウンロードしたバイナリをパスに追加
 
   # 3. 必要な Python モジュールをインストール
-  source "$HOME/.rye/env"
-  rye sync
+  uv sync
 
   # 4. ドキュメントをビルド
-  rye run quartodoc build --config docs/_quarto.yml
+  uv run quartodoc build --config docs/_quarto.yml
   find notebook/ -name "*.ipynb" | xargs -I {} basename {} .ipynb | xargs -I {} quarto convert "notebook/{}.ipynb" --output "docs/notebook/{}.qmd"
+  export QUARTO_PYTHON=$(pwd)/.venv/bin/python
   quarto render docs
 """
