@@ -5,7 +5,7 @@ GitHub Actions でのCI
 
 ## プロジェクト管理
 
-バージョン管理を Rye + uv で行います
+バージョン管理を uv で行います
 
 ## CI
 
@@ -16,8 +16,9 @@ GitHub Actions でのCI
 
 ## 導入方法
 
-Rye のインストール <https://rye.astral.sh/guide/installation/>
+uv のインストール <https://docs.astral.sh/uv/getting-started/installation/>
 
 ```sh
-sh ./setup-rye.sh
+sh ./setup-uv.sh
+uv run pre-commit install
 ```
