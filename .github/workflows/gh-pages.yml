@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Install Rye
-        run: ./setup-rye.sh
+      - name: Install uv
+        run: ./setup-uv.sh
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
@@ -24,17 +24,16 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .venv
-          key: venv-${{ runner.os }}-${{ hashFiles('**/requirements-dev.lock') }}
+          key: venv-${{ runner.os }}-${{ hashFiles('**/uv.lock') }}
       - name: Install python module
         if: ${{ steps.cache_dependency_python.outputs.cache-hit != 'true' }}
         run: |
-          source "$HOME/.rye/env"
-          rye sync
+          uv sync
       - name: Build Docs
         run: |
-          source "$HOME/.rye/env"
-          rye run quartodoc build --config docs/_quarto.yml
+          uv run quartodoc build --config docs/_quarto.yml
           find notebook/ -name "*.ipynb" | xargs -I {} basename {} .ipynb | xargs -I {} quarto convert "notebook/{}.ipynb" --output "docs/notebook/{}.qmd"
+          export QUARTO_PYTHON=$(pwd)/.venv/bin/python
           quarto render docs
       - uses: actions/upload-pages-artifact@v3
         with:
