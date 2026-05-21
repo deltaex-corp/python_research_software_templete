@@ -1,7 +1,8 @@
 # python_research_software_templete
 
-Rye + uv でのプロジェクト管理
-GitHub Actions でのCI
+* uv でのプロジェクト管理
+* quarto によるノートブック展開
+* GitHub Actions でのCI
 
 ## プロジェクト管理
 
