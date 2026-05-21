@@ -19,7 +19,8 @@ dev = [
     "pytest>=9.0.3",
     "mypy>=2.1.0",
     "jupyter>=1.1.1",
-    "quartodoc>=0.8.1",
+    "quartodoc>=0.11.1",
+    "griffe<2.0",
 ]
 
 [tool.hatch.metadata]
